@@ -1,0 +1,37 @@
+* {
+  scrollbar-color: #64748b #1e293b;
+}
+*::-webkit-scrollbar {
+  width: auto;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #64748b;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #94a3b8;
+}
+*::-webkit-scrollbar-thumb:active {
+  background-color: #cbd5e1;
+}
+*::-webkit-scrollbar-track {
+  background-color: #1e293b;
+}
+
+.select * {
+  scrollbar-color: #94a3b8 #475569;
+}
+.select *::-webkit-scrollbar {
+  width: auto;
+}
+.select *::-webkit-scrollbar-thumb {
+  background-color: #94a3b8;
+}
+.select *::-webkit-scrollbar-thumb:hover {
+  background-color: #cbd5e1;
+}
+.select *::-webkit-scrollbar-thumb:active {
+  background-color: #e2e8f0;
+}
+.select *::-webkit-scrollbar-track {
+  background-color: #475569;
+}

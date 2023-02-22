@@ -1,0 +1,61 @@
+* {
+  scroll-behavior: smooth;
+}
+
+/* .nav-btn {
+  border-bottom: 0px solid #fff;
+  transition: 0.1s;
+}
+.nav-btn:hover {
+  border-bottom: 2px solid #fff;
+} */
+.nav-btn {
+  position: relative;
+}
+.nav-btn::after {
+  content: "";
+  display: block;
+  z-index: -1;
+  background: #64748b50;
+  opacity: 0.5;
+  position: absolute;
+  width: calc(100%);
+  height: calc(100%);
+  left: -50%;
+  top: 50%;
+  transition: 500ms;
+}
+.nav-btn:hover::after {
+  left: 0;
+  top: 0;
+}
+
+.coworkingBackground {
+  /* background-image: url("https://www.transparenttextures.com/patterns/old-wall.png"); */
+  background-image: url("https://www.transparenttextures.com/patterns/zig-zag.png");
+}
+
+.clippedImage {
+  --mask: radial-gradient(80px at 0 0, #0000 98%, #000) 0/51% 100% no-repeat,
+    radial-gradient(80px at 100% 100%, #0000 98%, #000) 100%/51% 100% no-repeat;
+  mask: var(--mask);
+}
+
+.heroBackground {
+  position: relative;
+}
+.heroBackground::after {
+  content: "";
+  z-index: -10;
+  display: block;
+  position: absolute;
+  background-image: url(/pexels-marc-mueller-380769.jpg);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  filter: contrast(150%) brightness(30%) blur(2px);
+}
